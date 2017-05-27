@@ -8,21 +8,26 @@ Advantages of using this repository: Save 1 hour or more (depending on your proc
 Instructions for use
 
 1. Add this repo in /etc/pacman.conf with favorite editor:
-``` bash
+``` code
 [mysqlcompiled]
 SigLevel = Never
 Server = https://github.com/dansnts/mysqlcompiled/$arch
 ```
 
 2. Sync the repo with the command
+``` code
 sudo pacman -Syy
+```
 
 3. Install the package
-sudo pacman -S mysqlcompiled
 
 ``` code
+sudo pacman -S mysqlcompiled
+```
+
 When you finish installing the packages, the following alerts will appear:
 
+``` code
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
@@ -36,15 +41,21 @@ dddd-dd-ddThh:mm:ss.milisecondsZ 1 [Warning] root@localhost is created with an e
 This is normal because MySQL has not yet been configured. This will be done with the next steps.
 
 4. Start MySQL server and autostart MySQL on boot:
+
+``` code
 systemctl start mysqld.service ## use restart after update
 systemctl enable mysqld.service
+```
 
 5. Configure the MySQL installation. As root user, type:
-/usr/bin/mysql_secure_installation
 
+``` code
+/usr/bin/mysql_secure_installation
+```
 
 Output:
 
+``` code
 Securing the MySQL server deployment.
 
 Enter password for user root: 
@@ -100,5 +111,6 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y
 Success.
 
 All done! 
+```
 
 * Thats all folks! 
