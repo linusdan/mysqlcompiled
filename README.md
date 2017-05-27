@@ -8,9 +8,11 @@ Advantages of using this repository: Save 1 hour or more (depending on your proc
 Instructions for use
 
 1. Add this repo in /etc/pacman.conf with favorite editor:
+``` bash
 [mysqlcompiled]
 SigLevel = Never
 Server = https://github.com/dansnts/mysqlcompiled/$arch
+```
 
 2. Sync the repo with the command
 sudo pacman -Syy
@@ -18,6 +20,7 @@ sudo pacman -Syy
 3. Install the package
 sudo pacman -S mysqlcompiled
 
+``` code
 When you finish installing the packages, the following alerts will appear:
 
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
@@ -29,7 +32,7 @@ dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] No existing UUID has been found, so
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
 dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] CA certificate ca.pem is self signed.
 dddd-dd-ddThh:mm:ss.milisecondsZ 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
-
+```
 This is normal because MySQL has not yet been configured. This will be done with the next steps.
 
 4. Start MySQL server and autostart MySQL on boot:
