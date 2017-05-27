@@ -45,7 +45,7 @@ This is normal because MySQL has not yet been configured. This will be done with
 4. Start MySQL server and autostart MySQL on boot:
 
 ```
-systemctl start mysqld.service ## use restart after update
+systemctl start mysqld.service  ## use restart after update
 systemctl enable mysqld.service
 ```
 
