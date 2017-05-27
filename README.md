@@ -1,11 +1,13 @@
-# MySQL Compiled by Dan
+## MySQL Compiled by Dan
 MySQL Compiled for Arch users with x86_64 machines.
+
 The same is compiled on my notebook through the MySQL AUR repository through the muflone maintainer PKGBUILD with the makepkg -s command.
+
 Thanks muflone! Without your repository, maybe that would not be possible.
 
 Advantages of using this repository: Save 1 hour or more (depending on your processor) to do other things.
 
-Instructions for use
+###### Instructions for use
 
 1. Add this repo in /etc/pacman.conf with favorite editor:
 ``` code
@@ -113,4 +115,4 @@ Success.
 All done! 
 ```
 
-* Thats all folks! 
+:smiley_cat: Thats all folks! :smiley_cat: 
