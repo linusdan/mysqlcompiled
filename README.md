@@ -5,7 +5,6 @@
 ``` 
 cd ~/Downloads
 - Enter the command entered at the beginning of the tutorial
-
 ```
 
 ### After installation, Read the step 3 alert and proceed the instructions of the tutorial.
