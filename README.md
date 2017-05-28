@@ -9,8 +9,18 @@ Advantages of using this repository: Save 1 hour or more (depending on your proc
 
 ###### Instructions for use
 
-1. Add this repo in /etc/pacman.conf with favorite editor:
+1. Add this repo in /etc/pacman.conf with your favorite editor:
 ```
+{...}
+
+# An example of a custom package repository.  See the pacman manpage for
+# tips on creating your own repositories.
+#[custom]
+#SigLevel = Optional TrustAll
+#Server = file:///home/custompkgs
+
+<Insert from here>
+
 [mysqlcompiled]
 SigLevel = Never
 Server = https://github.com/dansnts/mysqlcompiled/$arch
