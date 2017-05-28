@@ -2,8 +2,10 @@
 
 ### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` sudo pacman -U mysql libmysqlclient mysql-clients ``` here: https://github.com/dansnts/mysqlcompiled/blob/master/files/ . ) If you have installed mariadb, uninstall it.
 
-``` cd ~/Downloads
-    - Enter the command entered at the beginning of the tutorial
+``` 
+cd ~/Downloads
+- Enter the command entered at the beginning of the tutorial
+
 ```
 
 ### After installation, Read the step 3 alert and proceed the instructions of the tutorial.
