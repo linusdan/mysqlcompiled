@@ -31,7 +31,7 @@ Server = https://github.com/dansnts/mysqlcompiled/$arch
 sudo pacman -Syy
 ```
 
-3. Install the package
+3. Install the packages
 
 ```
 sudo pacman -S mysql libmysqlclient mysql-clients
