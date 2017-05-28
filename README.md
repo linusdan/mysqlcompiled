@@ -125,4 +125,11 @@ Success.
 All done! 
 ```
 
+To remove the packages:
+
+```
+sudo pacman -Rscn mysql libmysqlclient mysql-clients
+
+```
+
 :smiley_cat: Thats all folks! :smiley_cat: 
