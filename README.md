@@ -1,4 +1,9 @@
 ## MySQL Compiled by Dan
+
+### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` pacman -U mysql libmysqlclient mysql-clients ``` here: https://github.com/dansnts/mysqlcompiled/blob/master/files/ . ) If you have installed mariadb, uninstall it.
+
+### After installation, Read the step 3 alert and proceed the instructions of the tutorial.
+
 MySQL Compiled for Arch users with x86_64 machines.
 
 The same is compiled on my notebook through the MySQL AUR repository through the muflone maintainer PKGBUILD with the makepkg -s command.
