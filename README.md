@@ -34,7 +34,7 @@ sudo pacman -Syy
 3. Install the package
 
 ```
-sudo pacman -S mysqlcompiled
+sudo pacman -S mysql libmysqlclient mysql-clients
 ```
 
 When you finish installing the packages, the following alerts will appear:
