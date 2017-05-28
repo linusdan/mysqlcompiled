@@ -23,7 +23,7 @@ Advantages of using this repository: Save 1 hour or more (depending on your proc
 
 [mysqlcompiled]
 SigLevel = Never
-Server = https://github.com/dansnts/mysqlcompiled/files/
+Server = https://github.com/dansnts/mysqlcompiled/blob/master/files
 ```
 
 2. Sync the repo with the command
