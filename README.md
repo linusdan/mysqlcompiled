@@ -1,6 +1,6 @@
 ## MySQL Compiled by Dan
 
-### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` sudo pacman -U mysql libmysqlclient mysql-clients ``` here: https://github.com/dansnts/mysqlcompiled/blob/master/files/ . ) If you have installed mariadb, uninstall it.
+### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` sudo pacman -U mysql libmysqlclient mysql-clients ``` [here](https://github.com/dansnts/mysqlcompiled/blob/master/files/). If you have installed mariadb, uninstall it.
 
 ``` 
 cd ~/Downloads
