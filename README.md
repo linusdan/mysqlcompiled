@@ -1,6 +1,6 @@
 ## MySQL Compiled by Dan
 
-### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` sudo pacman -U mysql-{}-x86_64.pkg.tar.xz libmysqlclient-{}-x86_64.pkg.tar.xz mysql-clients-{}-x86_64.pkg.tar.xz  ```[here](https://github.com/dansnts/mysqlcompiled/blob/master/files/). If you have installed mariadb, uninstall it.
+### (Under construction for pacman automatic synchronization. Files can be obtained for installation with ``` sudo pacman -U mysql-{version}-x86_64.pkg.tar.xz libmysqlclient-{version}-x86_64.pkg.tar.xz mysql-clients-{version}-x86_64.pkg.tar.xz  ```[here](https://github.com/dansnts/mysqlcompiled/blob/master/files/). If you have installed mariadb, uninstall it.
 
 ``` 
 cd ~/Downloads
