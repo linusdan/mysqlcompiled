@@ -1,6 +1,7 @@
 ## MySQL Compiled by Dan
 
-[logo]: https://github.com/dansnts/mysqlcompiled/blob/master/img/logo-mysql-170x115.png "Logo MySQL"
+Inline-style: 
+![alt text](https://github.com/dansnts/mysqlcompiled/blob/master/img/logo-mysql-170x115.png "Logo Title Text 1")
 
 MySQL Compiled for Arch users with x86_64 machines.
 
