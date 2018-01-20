@@ -4,7 +4,7 @@
 
 MySQL Compiled for Arch users with x86_64 machines.
 
-The same is compiled on my notebook through the MySQL AUR repository through the muflone maintainer PKGBUILD with the makepkg -s command.
+The same is compiled on my notebook through the MySQL AUR repository through the muflone maintainer PKGBUILD with the ``` makepkg -s ``` command.
 
 Thanks muflone! Without your repository, maybe that would not be possible.
 
