@@ -11,7 +11,7 @@ Thanks muflone! Without your repository, maybe that would not be possible.
 Advantages of using this repository: Save 1 hour or more (depending on your processor) to do other things.
 
 ### Attention
-These packages conflict with Mariadb. If you have installed, uninstall.
+These packages conflict with MariaDB. If you have installed, uninstall.
 
 ### Instructions for use
 1. Open your favorite terminal and go to the Downloads folder with the command:
