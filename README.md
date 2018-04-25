@@ -20,11 +20,11 @@ cd ~/Downloads
 ```
 
 2. Download the files for the installation:
-* [**MySQL**](https://github.com/dansnts/mysqlcompiled/raw/master/files/mysql-5.7.21-1-x86_64.pkg.tar.xz)
-* [**libmysqlclient**](https://github.com/dansnts/mysqlcompiled/raw/master/files/libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz)
-* [**MySQL Clients**](https://github.com/dansnts/mysqlcompiled/raw/master/files/mysql-clients-5.7.21-1-x86_64.pkg.tar.xz)
+* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/mysql-5.7.21-1-x86_64.pkg.tar.xz)
+* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz)
+* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/mysql-clients-5.7.21-1-x86_64.pkg.tar.xz)
 
-3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/dansnts/mysqlcompiled/blob/master/files/SHA256SUM.txt)
+3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/SHA256SUM.txt)
 ```
 MySQL: sha256sum mysql-5.7.21-1-x86_64.pkg.tar.xz
 libmysqlclient: sha256sum libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz
@@ -133,5 +133,29 @@ sudo pacman -Rscn mysql libmysqlclient mysql-clients
 ```
 
 To update the version of MySQL, follow steps one through four again.
+
+### Tip
+
+#### Alternative for automatic sync:
+Muflone repo
+
+1. Edit /etc/pacman.conf:
+```
+nano /etc/pacman.conf
+```
+
+2. Add in final of the file:
+```
+[muflone-mysql]
+SigLevel = Required
+Server = https://www.muflone.com/repositories/archlinux/$repo/$arch
+```
+Save with Ctrl+O, Enter and exit with Ctrl+X.
+
+3. Sync the repo and install the application:
+```
+sudo pacman -Syu && sudo pacman -S mysql -y
+```
+Follow the instructions describes here.
 
 :smiley_cat: Thats all folks! :smiley_cat:
