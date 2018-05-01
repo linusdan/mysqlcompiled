@@ -20,21 +20,21 @@ cd ~/Downloads
 ```
 
 2. Download the files for the installation:
-* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/mysql-5.7.21-1-x86_64.pkg.tar.xz)
-* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz)
-* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/mysql-clients-5.7.21-1-x86_64.pkg.tar.xz)
+* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/mysql-5.7.22-1-x86_64.pkg.tar.xz)
+* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz)
+* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/mysql-clients-5.7.22-1-x86_64.pkg.tar.xz)
 
-3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.21/SHA256SUM.txt)
+3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/SHA256SUM.txt)
 ```
-MySQL: sha256sum mysql-5.7.21-1-x86_64.pkg.tar.xz
-libmysqlclient: sha256sum libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz
-MySQL Clients: sha256sum mysql-clients-5.7.21-1-x86_64.pkg.tar.xz
+MySQL: sha256sum mysql-5.7.22-1-x86_64.pkg.tar.xz
+libmysqlclient: sha256sum libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz
+MySQL Clients: sha256sum mysql-clients-5.7.22-1-x86_64.pkg.tar.xz
 ```
 
 4. Install the packages
 
 ```
-sudo pacman -U mysql-5.7.21-1-x86_64.pkg.tar.xz libmysqlclient-5.7.21-1-x86_64.pkg.tar.xz mysql-clients-5.7.21-1-x86_64.pkg.tar.xz
+sudo pacman -U mysql-5.7.22-1-x86_64.pkg.tar.xz libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz mysql-clients-5.7.22-1-x86_64.pkg.tar.xz
 ```
 
 When you finish installing the packages, the following alerts will appear:
