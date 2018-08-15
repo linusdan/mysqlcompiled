@@ -20,35 +20,30 @@ cd ~/Downloads
 ```
 
 2. Download the files for the installation:
-* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/mysql-5.7.22-1-x86_64.pkg.tar.xz)
-* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz)
-* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/mysql-clients-5.7.22-1-x86_64.pkg.tar.xz)
+* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/mysql-8.0.12-1-x86_64.pkg.tar.xz)
+* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz)
+* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/mysql-clients-8.0.12-1-x86_64.pkg.tar.xz)
 
-3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/5.7.22/SHA256SUM.txt)
+3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/SHA256SUM.txt)
 ```
-MySQL: sha256sum mysql-5.7.22-1-x86_64.pkg.tar.xz
-libmysqlclient: sha256sum libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz
-MySQL Clients: sha256sum mysql-clients-5.7.22-1-x86_64.pkg.tar.xz
+MySQL: sha256sum mysql-8.0.12-1-x86_64.pkg.tar.xz
+libmysqlclient: sha256sum libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz
+MySQL Clients: sha256sum mysql-clients-8.0.12-1-x86_64.pkg.tar.xz
 ```
 
 4. Install the packages
 
 ```
-sudo pacman -U mysql-5.7.22-1-x86_64.pkg.tar.xz libmysqlclient-5.7.22-1-x86_64.pkg.tar.xz mysql-clients-5.7.22-1-x86_64.pkg.tar.xz
+sudo pacman -U mysql-8.0.12-1-x86_64.pkg.tar.xz libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz mysql-clients-8.0.12-1-x86_64.pkg.tar.xz
 ```
 
 When you finish installing the packages, the following alerts will appear:
 
 ```
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] InnoDB: New log files created, LSN=45790
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] InnoDB: Creating foreign key constraint system tables.
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: {...}
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
-dddd-dd-ddThh:mm:ss.milisecondsZ 0 [Warning] CA certificate ca.pem is self signed.
-dddd-dd-ddThh:mm:ss.milisecondsZ 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2018-08-15T18:13:18.368772Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-15T18:13:18.368909Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.12) initializing of server in progress as process 2842
+2018-08-15T18:13:37.092384Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: uidJTjlkt4:)
+2018-08-15T18:13:50.591932Z 0 [System] [MY-013170] [Server] /usr/bin/mysqld (mysqld 8.0.12) initializing of server has completed
 ```
 This is normal because MySQL has not yet been configured. This will be done with the next steps.
 
@@ -146,7 +141,7 @@ nano /etc/pacman.conf
 
 2. Add in final of the file:
 ```
-[muflone-mysql]
+[muflone-aur]
 SigLevel = Required
 Server = https://www.muflone.com/repositories/archlinux/$repo/$arch
 ```
