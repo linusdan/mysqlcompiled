@@ -1,6 +1,6 @@
 ## MySQL Compiled by Dan
  
-![alt text](https://github.com/dansnts/mysqlcompiled/blob/master/img/logo-mysql-170x115.png "Logo MySQL")
+![alt text](https://github.com/linusdan/mysqlcompiled/blob/master/img/logo-mysql-170x115.png "Logo MySQL")
 
 MySQL Compiled for Arch users with x86_64 machines.
 
@@ -20,30 +20,30 @@ cd ~/Downloads
 ```
 
 2. Download the files for the installation:
-* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/mysql-8.0.12-1-x86_64.pkg.tar.xz)
-* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz)
-* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/mysql-clients-8.0.12-1-x86_64.pkg.tar.xz)
+* [**MySQL**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.14/mysql-8.0.14-1-x86_64.pkg.tar.xz)
+* [**libmysqlclient**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.14/libmysqlclient-8.0.14-1-x86_64.pkg.tar.xz)
+* [**MySQL Clients**](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.14/mysql-clients-8.0.14-1-x86_64.pkg.tar.xz)
 
-3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.12/SHA256SUM.txt)
+3. Check if the integrity of the files conforms to the file [SHA256SUM.txt](https://github.com/linusdan/mysqlcompiled/blob/master/files/8.0.14/SHA256SUM.txt)
 ```
-MySQL: sha256sum mysql-8.0.12-1-x86_64.pkg.tar.xz
-libmysqlclient: sha256sum libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz
-MySQL Clients: sha256sum mysql-clients-8.0.12-1-x86_64.pkg.tar.xz
+MySQL: sha256sum mysql-8.0.14-1-x86_64.pkg.tar.xz
+libmysqlclient: sha256sum libmysqlclient-8.0.14-1-x86_64.pkg.tar.xz
+MySQL Clients: sha256sum mysql-clients-8.0.14-1-x86_64.pkg.tar.xz
 ```
 
 4. Install the packages
 
 ```
-sudo pacman -U mysql-8.0.12-1-x86_64.pkg.tar.xz libmysqlclient-8.0.12-1-x86_64.pkg.tar.xz mysql-clients-8.0.12-1-x86_64.pkg.tar.xz
+sudo pacman -U mysql-8.0.14-1-x86_64.pkg.tar.xz libmysqlclient-8.0.14-1-x86_64.pkg.tar.xz mysql-clients-8.0.14-1-x86_64.pkg.tar.xz
 ```
 
 When you finish installing the packages, the following alerts will appear:
 
 ```
-2018-08-15T18:13:18.368772Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
-2018-08-15T18:13:18.368909Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.12) initializing of server in progress as process 2842
-2018-08-15T18:13:37.092384Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: uidJTjlkt4:)
-2018-08-15T18:13:50.591932Z 0 [System] [MY-013170] [Server] /usr/bin/mysqld (mysqld 8.0.12) initializing of server has completed
+2019-03-09T23:23:18.368772Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2019-03-09T23:23:18.368909Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.14) initializing of server in progress as process 2842
+2019-03-09T23:23:37.092384Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: ST1Tr0Wa#o=)
+2019-03-09T23:23:50.591932Z 0 [System] [MY-013170] [Server] /usr/bin/mysqld (mysqld 8.0.14) initializing of server has completed
 ```
 This is normal because MySQL has not yet been configured. This will be done with the next steps.
 
